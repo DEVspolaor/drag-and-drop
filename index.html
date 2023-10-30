@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+
+    <title>drag-and-drop</title>
+</head>
+
+<body>
+    <h2>Arrastar e soltar </h2>
+    <p>Associe cada logo ao seu respectivo lugar:</p>
+    <div class="text">
+       
+        <img src="./imgs/SENAI.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+
+        <img src="./imgs/SesiSP.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31">
+
+        <img src="./imgs/fiesp.png" draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="31">
+
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+               </div>
+
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <p> tem como objetivo estimular a inovação industrial por meio da educação, consultoria, pesquisa aplicada e serviços técnicos e tecnológicos que são decisivos para a competitividade das empresas do Estado e do Brasil.</p>
+
+        <p>O Serviço Social da Indústria é uma rede de instituições paraestatais brasileiras e de atuação em âmbito nacional. </p>
+
+        <p>fomenta a atividade industrial, buscando mais competitividade assim como possibilitar o acesso ao crédito e a novas tecnologias.
+
+        </p>
+    </div>
+</body>
+
+</html>
